@@ -167,3 +167,399 @@ ul.socialList li img {
   justify-content: center;
   align-items: center;
 }
+/*CSS for Designs page*/
+.desgngrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  gap: 20px 20px;
+  grid-template-areas: "mom_quote" "intro" "sites_dy_hd" "sites_dy" "sites_st_hd" "sites_st";
+}
+.mom_quote {
+  grid-area: mom_quote;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #fcfcfe;
+  border: 2px solid #d6d6f2;
+  margin: 0.5em 2em;
+  padding: 1.5em 2em;
+}
+.intro {
+  grid-area: intro;
+  display: grid;
+  grid-template-columns: 3fr min-content;
+  gap: 10px 10px;
+  grid-template-areas: "introtext introimg";
+}
+.introtext {
+  line-height: 1.5em;
+  padding: 0.5em 2em;
+}
+.sites_dy {
+  grid-area: sites_dy;
+}
+.sites_st {
+  grid-area: sites_st;
+}
+.sites_dy,
+.sites_st {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+.sites_dy_hd {
+  grid-area: sites_dy_hd;
+}
+.sites_st_hd {
+  grid-area: sites_st_hd;
+}
+.sites_dy_hd,
+.sites_st_hd {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#cfd5e6, #c6bfdd);
+  border-radius: 20em 20em;
+  margin: 1em 1em 0.5em 1em;
+  text-align: center;
+  border: 2px solid #d1d1f6;
+}
+.sitethumb {
+  max-width: 300px;
+  margin: 5px 20px 25px 20px;
+}
+.sitethumb img {
+  max-width: 300px;
+  border: 2px solid #222;
+}
+.introtext {
+  grid-area: introtext;
+}
+.introimg {
+  grid-area: introimg;
+}
+.introimg img {
+  max-height: 200px;
+  margin: 1em 2em;
+}
+.mom_quote_text {
+  font-style: italic;
+}
+.mom_quote_credit {
+  margin-left: 10px;
+}
+.footer {
+  background-color: #3e3662;
+  border-color: #a37ab6;
+}
+/*CSS unique to blog page*/
+.blogwrap {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: "blog sidebar";
+  gap: 0em 1em;
+}
+.blog {
+  grid-area: blog;
+  padding: 0px 10px 0px 10px;
+}
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+}
+.sidebar img {
+  border-radius: 1em;
+  margin-bottom: 20px;
+  border: 2px solid #222;
+}
+/*Commenting out as this was a placeholder for images that may be needed in future.
+.sidebarsquare {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #222;
+  background-color: #a37ab6;
+  margin-bottom: 20px;
+  border-radius: 1em;
+}*/
+.blog_main {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.artcl {
+  background-color: #fbfbfe;
+  border: 1px solid #bcbcf2;
+}
+article h5 {
+  margin: 0px;
+}
+article h6 {
+  margin: 0px;
+  font-size: 16px;
+  text-align: left;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+.blog_key {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 0px 15px 0px;
+}
+.catgs {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 1px solid #e7e7fa;
+  padding-top: 10px;
+}
+.catbutton {
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 0.5em;
+}
+.cat_cross_stitch {
+  background-color: #bcd7f2;
+  border: 1px solid #a7caee;
+}
+.cat_tech_projects {
+  background-color: #d7bcf2;
+  border: 1px solid #caa7ee;
+}
+.cat_recipe {
+  background-color: #f6d1e4;
+  border: 1px solid #eea6cb;
+}
+.cat_photography {
+  background-color: #f6e4d1;
+  border: 1px solid #eecba6;
+}
+.cat_jewelry {
+  background-color: #d1f6e4;
+  border: 1px solid #91eabe;
+}
+.cat_writing {
+  background-color: #f4f6d1;
+  border: 1px solid #dfe67c;
+}
+.blog_main a {
+  color: #2d68eb;
+}
+/*Working and Resume CSS*/
+.resume {
+  background: linear-gradient(#e7f3f9, #ede7f9, #f9e7f3);
+  border: ridge .5em #ede7f9;
+  border-radius: 10px 100px / 120px;
+  padding: 50px;
+  max-width: 60em;
+}
+
+.res_intro {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: repeat(min-content);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 
+  "res_intro_text res_intro_pdf"
+  "res_intro_text res_intro_read";
+  max-width: 60em;
+}
+
+.res_intro_text { grid-area: res_intro_text; }
+.res_intro_pdf { grid-area: res_intro_pdf; }
+.res_intro_read { grid-area: res_intro_read; }
+
+.res_intro {
+  margin-bottom: 1em;
+}
+
+.res_intro_pdf, .res_intro_read {
+  display: flex;
+  justify-content: space-around;
+}
+
+.res_intro_pdf img, .res_intro_read img {
+  height: 50px;
+  width: 50px;
+}
+
+.section_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 60em;
+}
+.res_section_icon {
+  height: 70px;
+  width: 70px;
+}
+.schoolgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(min-content);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 
+    "UMass"
+    "MCC"
+    "CCBC"
+    "UMBC"
+    "CSM"
+    "HS";
+}
+.UMass {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: repeat(min-content);
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas: 
+  "res_school ."
+  "res_degree1 res_dates1"
+  "res_degree2 res_dates2"
+  "res_degree3 res_dates3";
+}
+.res_school { grid-area: res_school; }
+.res_degree1 { grid-area: res_degree1; }
+.res_dates1 { grid-area: res_dates1; }
+.res_degree2 { grid-area: res_degree2; }
+.res_dates2 { grid-area: res_dates2; }
+.res_degree3 { grid-area: res_degree3; }
+.res_dates3 { grid-area: res_dates3; }
+
+.schoolgrid h3 {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.UMass h4, .MCC h4, .CCBC h4, .UMBC h4, .CSM h4 {
+  padding: 10px 0px 10px 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.MCC h5, .CCBC h5, .UMBC h5, .CSM h5 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding: 5px 0px 10px 0px;
+}
+
+.res_degree1, .res_degree2, .res_degree3 {
+  padding-left: 10px;
+}
+
+.res_dates1, .res_dates2, .res_dates3 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.addtl_courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 15px;
+  grid-template-areas:
+  "MCC CCBC"
+  "UMBC CSM";
+}
+
+.MCC {grid-area: MCC;}
+.CCBC {grid-area: CCBC;}
+.UMBC {grid-area: UMBC;}
+.CSM {grid-area: CSM;}
+
+.res_schools, .res_program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.UMass {
+  border: 3px dashed #c6dcf4;
+  background: linear-gradient(0.75turn, #fcf1f6, #d6e6f7, #f7f1fc);
+  padding: 1.5em;
+}
+
+.MCC, .CCBC, .UMBC, .CSM {
+  padding: 10px;
+  border: 1px solid #c6dcf4;
+  background-color: #d6e6f7;
+}
+
+.workgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(min-content);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "work_one"
+    "work_two"
+    "work_three"
+    "work_four"
+    "work_five"
+    "work_six";
+}
+.job_heading, .hobby_heading {
+  display: grid;
+  grid-template-columns: 60% 40% ;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: 
+ "res_company res_company"
+  "res_title res_dates"; 
+}
+
+.res_company { grid-area: res_company; }
+.res_title { grid-area: res_title; }
+.res_dates { grid-area: res_dates; }
+
+.res_dates, .res_dates_extra {
+  display: flex;
+  justify-content: flex-end;
+}
+.job_heading_extra {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: 
+  "res_title_extra res_dates_extra";
+}
+
+.res_title_extra { grid-area: res_title_extra; }
+.res_dates_extra { grid-area: res_dates_extra; }
+
+.job_heading h3, .job_heading h4, .hobby_heading h3, .hobby_heading h4, .job_heading_extra h4 {
+  margin: 10px 0px 10px 0px;
+}
+
+.res_descrpt, .res_skills {
+  max-width: 60em;
+}
+
+/*CSS for Contact Page*/
+
+.contact_intro {
+  margin: 1em;
+}
+.form_back {
+  display: flex;
+  background-color: #b6ace3;
+  padding: 1em;
+  align-items: center;
+  flex-direction: column;
+}
+.contact_form {
+  padding: 2em 1em 2em 1em;
+}
+
+.contact_label, .contact_entry, .contact_submit {
+  margin: 10px;
+}

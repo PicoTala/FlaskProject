@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="heading">Mostly, I like to make and share things.</h2>
+<div class="contact_intro">
+    <div class="contact_intro_text">
+        <h4>Hello</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam repellat illum assumenda doloremque maxime ratione magnam quae, saepe error, laboriosam quas quis corporis vero ipsa. Perferendis quas praesentium vero!</p>
+    </div>
+</div>
+<div class="form_back">
+<section class="contact_form">
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+    {{ form.name.label(class="contact_label") }}
+    <br/>
+    {{ form.name(class="contact_entry") }}
+<br/>
+    {{ form.email.label(class="contact_label") }}
+    <br/>
+    {{ form.email(class="contact_entry") }}
+<br/>
+    {{ form.message.label(class="contact_label") }}
+    <br/>
+    {{ form.message(class="contact_entry") }}
+<br/>
+    {{ form.submit(class="contact_submit") }}
+
+</form>
+</section></div>
+{% endblock %}
