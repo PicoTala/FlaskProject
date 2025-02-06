@@ -16,7 +16,7 @@ body {
     grid-template-columns: 150px 3fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas: "nav page";
+    grid-template-areas: "nav content";
 }
 
 .pageframe {
@@ -79,7 +79,7 @@ ul.socialList li img {
 }
 
 #content {
-    grid-area: page;
+    grid-area: content;
     padding: 2em;
     background-color: lavender;
     margin: 2em;
@@ -95,6 +95,13 @@ ul.socialList li img {
 
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
     color: #0b0b34;
+}
+
+.standard_page {
+  background-color: #fbfbfe;
+  border-radius: 10px;
+  border: 1px solid #ebebfa;
+  padding: 1.5em;
 }
 
 .frontIntro {
@@ -294,7 +301,7 @@ ul.socialList li img {
 }
 .artcl {
   background-color: #fbfbfe;
-  border: 1px solid #bcbcf2;
+                      
 }
 article h5 {
   margin: 0px;
@@ -544,6 +551,23 @@ article h6 {
   max-width: 60em;
 }
 
+/*CSS for Resume Article Page*/
+.resume_article_full {
+  background: linear-gradient(#e7f3f9, #ede7f9, #f9e7f3);
+  border: ridge .5em #ede7f9;
+  border-radius: 10px 100px / 120px;
+  padding: 50px;
+  
+}
+.resume_article_intro_text, .resume_article_text {
+  line-height: 1.5rem;
+  max-width: 60em;
+}
+
+.resume_article p + p {
+  text-indent: 2rem;
+}
+
 /*CSS for Contact Page*/
 
 .contact_intro {
@@ -562,4 +586,327 @@ article h6 {
 
 .contact_label, .contact_entry, .contact_submit {
   margin: 10px;
+}
+
+/*CSS for Advent Page*/
+
+.the-girl-next-door-regular {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+.advent_back {
+  background-color: #ddeaf7;
+  border: 2px solid #d1e3f6;
+  border-radius: 0.25em;
+  background-image: url("../static/img/fresh-snow.png");
+  padding: 0.5em;
+}
+/*what about doing trees instead of snow?*/
+
+.advent_cal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one two three four"
+    "five two six seven"
+    "eight nine ten seven"
+    "eleven twelve thirteen fourteen"
+    "eleven fifteen sixteen seventeen"
+    "eighteen nineteen twenty twentyone"
+    "twentytwo twentythree twenty twentyfour";
+}
+
+.advent_cal {
+  padding: 20px;
+}
+
+.advent_cal_block {
+  padding: 5px;
+  text-align: center;
+  border-radius: 0.25em;
+}
+
+.one, .seven, .thirteen, .nineteen {
+  background-color: #bcd7f2;
+  border: 2px solid #a7caee;
+}
+
+.two, .eight, .fourteen, .twenty {
+  background-color: #d7bcf2;
+  border: 2px solid #caa7ee;
+}
+
+.three, .nine, .fifteen, .twentyone {
+  background-color: #f6d1e4;
+  border: 2px solid #eea6cb;
+}
+
+.four, .ten, .sixteen, .twentytwo {
+  background-color: #f6e4d1;
+  border: 2px solid #eecba6;
+}
+
+.five, .eleven, .seventeen, .twentythree {
+  background-color: #d1f6e4;
+  border: 2px solid #91eabe;
+}
+
+.six, .twelve, .eighteen, .twentyfour {
+  background-color: #f4f6d1;
+  border: 2px solid #dfe67c;
+}
+
+.one:hover, .seven:hover, .thirteen:hover, .nineteen:hover {
+  background-color: #d1e4f6;
+  border: 2px solid #bcd7f2;
+}
+
+.two:hover, .eight:hover, .fourteen:hover, .twenty:hover {
+  background-color: #e4d1f6;
+  border: 2px solid #d7bcf2;
+}
+
+.three:hover, .nine:hover, .fifteen:hover, .twentyone:hover {
+  background-color: #f9e1ee;
+  border: 2px solid #f6d1e4;
+}
+
+.four:hover, .ten:hover, .sixteen:hover, .twentytwo:hover {
+  background-color: #faf1e6;
+  border: 2px solid #f6e4d1;
+}
+
+.five:hover, .eleven:hover, .seventeen:hover, .twentythree:hover {
+  background-color: #e6faf1;
+  border: 2px solid #d1f6e4;
+}
+
+.six:hover, .twelve:hover, .eighteen:hover, .twentyfour:hover {
+  background-color: #f9fae6;
+  border: 2px solid #f4f6d1;
+}
+
+.one { 
+  grid-area: one;
+}
+
+.two { 
+  grid-area: two;
+}
+
+.three { 
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.eleven {
+  grid-area: eleven;
+}
+
+.twelve {
+  grid-area: twelve;
+}
+
+.thirteen {
+  grid-area: thirteen;
+  }
+
+.fourteen {
+  grid-area: fourteen;
+}
+
+.fifteen {
+  grid-area: fifteen;
+}
+
+.sixteen {
+  grid-area: sixteen;
+}
+
+.seventeen {
+  grid-area: seventeen;
+}
+
+.eighteen {
+  grid-area: eighteen;
+}
+
+.nineteen {
+  grid-area: nineteen;
+}
+
+.twenty {
+  grid-area: twenty;
+}
+
+.twentyone {
+  grid-area: twentyone;
+}
+
+.twentytwo {
+  grid-area: twentytwo;
+}
+
+.twentythree {
+  grid-area: twentythree;
+}
+
+.twentyfour {
+  grid-area: twentyfour;
+}
+
+/*CSS for Cross Stitch page*/
+
+.crossstitch_display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 280px);
+  grid-gap: 20px;
+}
+.cs_shadow {
+  box-shadow: 10px 14px 20px 0px #666;
+}
+.block1 {
+  background: url(/static/img/cs_stardew_gems.png) no-repeat center center;
+  background-size: cover;
+}
+.block2 {
+  background: url(/static/img/cs_shaymin.png) no-repeat center center;
+  background-size: cover;
+}
+.block3 {
+  background: url(/static/img/cs_mnb_weddingbiscornu.png) no-repeat center center;
+  background-size: cover;
+  grid-column: 3 / 5;
+}
+.block4 {
+  background: url(/static/img/cs_hpbiscornu.png) no-repeat center center;
+  background-size: cover;
+  grid-row: 2 / 4;
+}
+.block5 {
+  background: url(/static/img/cs_asirra_catslimes.png) no-repeat center center;
+  background-size: cover;
+  grid-column: 2/4;
+}
+.block6 {
+  background: url(/static/img/cs_snowflakesal.png) no-repeat center center;
+  background-size: cover;
+}
+.block7 {
+  background-color: #d1d1f6;
+  border-radius: 10px;
+  grid-column: 2 / 5;
+  padding: 10px;
+  border: 2px dashed #e8e7fa;
+  margin: 5px;
+}
+.block7_text {
+  padding: 1em;
+}
+.block7 a {
+  color: #0450a3;
+}
+.block7 a:hover {
+  color: #0675ee;
+}
+.block7 a:active {
+  color: #f92d8f;
+}
+.block8 {
+  background: url(/static/img/cs_lpotl.png) no-repeat center center;
+  background-size: cover;
+}
+.block9 {
+  background: url(/static/img/cs_firstattempt.png) no-repeat center center;
+  background-size: cover;
+  grid-column: 2/4;
+}
+.block10 {
+  background: url(/static/img/cs_jpn_biscornu.png) no-repeat center center;
+  background-size: cover;
+}
+.block11 {
+  background: url(/static/img/cs_ukrn_bisc_small.png) no-repeat center center;
+  background-size: cover;
+  grid-column: 1/3;
+}
+.block12 {
+  background: url(/static/img/cs_strawberry_bookmark.png) no-repeat center center;
+  background-size: cover;
+}
+.block13 {
+  background: url(/static/img/cs_junimomagnet.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* CSS for Apple Dumpling Recipe page */
+
+.recipe {
+  padding: 0px 20px;
+}
+.recipe_intro h2,
+.recipe_intro h3 {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.recipe_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.recipe_intro img {
+  border-radius: 1em;
+  padding: 0.5em;
+}
+.recipe ul {
+  list-style-type: circle;
+  margin: 1em;
+}
+.ingredients {
+  display: flex;
+  flex-flow: row-wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.appl_dough,
+.appl_filling,
+.appl_syrup {
+  max-width: 35%;
 }

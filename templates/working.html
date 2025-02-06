@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2 class="heading">Mostly, I like to make and share things.</h2>
+<h2 class="heading">Mostly, I like to make and share things. ദ്ദി(˵ •̀ ᴗ - ˵ )</h2>
 <div class="res_intro">
           <div class="res_intro_text"><p>This is my long-form resume, with every bit of information I can offer in terms of my education, work and volunteer efforts. If you are looking for a one page PDF of my resume, with just the highlights, you can click on the PDF icon to download one.</p><p>If instead, you're looking for even more detail than you see below, click on the icon of an open book. You'll be treated to what is essentially an interview of myself, by myself, and explains the different connections between each of the items below.</p></div>
         <div class="res_intro_pdf"><a href="static/HSnowResume_2024.pdf"><img src="static/img/pdf_2108851.png" alt="an icon of a pdf document" ></a></div>
-        <div class="res_intro_read"><a href="post/resume_article.html"><img src="static/img/reading_3098103.png" alt="an icon showing two hands holding up a book, with multicolored sparkles around them"></a></div>
+        <div class="res_intro_read"><a href="{{ url_for ('resume_article') }}"><img src="static/img/reading_3098103.png" alt="an icon showing two hands holding up a book, with multicolored sparkles around them"></a></div>
         </div>
         <section class="resume">
           <div class="section_heading"><h2>Education</h2><img src="static/img/education_4207253.png" alt="an icon of a stack of books, with a graduation cap on top" class="res_section_icon"></div>

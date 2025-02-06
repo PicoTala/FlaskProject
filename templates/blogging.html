@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2 class="heading">Mostly, I like to make and share things.</h2>
+<h2 class="heading">Mostly, I like to make and share things. ദ്ദി(˵ •̀ ᴗ - ˵ )</h2>
         <section class="blog_key">
                 <div class="catbutton cat_cross_stitch">Cross Stitch</div>
                 <div class="catbutton cat_tech_projects">Tech Projects</div>
@@ -21,7 +21,7 @@
                 game that takes about ten minutes to play. I made it as a test,
                 to see how Twinery worked, and am planning to make longer text
                 games in the future...
-                <a href="The_Cat_Wants_Breakfast.html">Start Playing</a>
+                <a href="{{ url_for('cat_breakfast') }}">Start Playing</a>
               </p>
               <div class="catgs">
                 <div class="catbutton cat_tech_projects">Tech Projects</div>
@@ -31,8 +31,8 @@
             <article class="blog_main artcl">
               <h5>More Resume Details</h5>
               <p>
-                As a way to expand on and explain some of the different roles you'll see on my resume, I've written up an article, detailing those experiences a little further. If you would like to see a more traditional outline, you're invited to view that <a href="working.html">here</a>, which also includes a download link for a one-page PDF version.
-                <a href="post/resume_article.html">Read More</a>
+                As a way to expand on and explain some of the different roles you'll see on my resume, I've written up an article, detailing those experiences a little further. If you would like to see a more traditional outline, you're invited to view that <a href="{{ url_for ('working') }}">here</a>, which also includes a download link for a one-page PDF version and an "interview" with myself.
+                <a href="{{ url_for ('resume_article') }}">Read More</a>
               </p>
               <div class="catgs">
                 <div class="catbutton cat_writing">Writing</div>
@@ -47,7 +47,7 @@
                 sadly. However, I'll include my notes and thoughts on how I've
                 made my own changes to it since then. The prep takes a few
                 hours, and if you have helpers it will be much easier...
-                <a href="post/appledumplings.html">Read More</a>
+                <a href="{{ url_for ('apple_dumplings') }}">Read More</a>
               </p>
               <div class="catgs">
                 <div class="catbutton cat_recipe">Recipes</div>
@@ -63,14 +63,11 @@
                 <a href="http://sirithre.com/cross-stitch-reviews-tutorials/"
                   >tutorials</a
                 >. They helped me learn quickly, and she has a discord you can
-                pop into, for community and inspiration...<a
-                  href="post/crossstitch_081621.html"
-                  >Read More</a
-                >
+                pop into, for community and inspiration...<a href="{{ url_for ('cross_stitch_download') }}">Read More</a>
               </p>
               <div class="catgs">
                 <div class="catbutton cat_cross_stitch">Cross Stitch</div>
-<div class="catbutton cat_photography">Photography</div>
+                <div class="catbutton cat_photography">Photography</div>
               </div>
             </article>
             <article class="blog_main artcl">
@@ -83,7 +80,7 @@
                 and freeze it as a sheet so it's easier to reheat by baking. You
                 can of course add ground meat, or fake meat for added texture if
                 you'd like...
-                <a href="post/stuffedpeppers.html">Read More</a>
+                <a href="{{ url_for ('stuffed_peppers') }}">Read More</a>
               </p>
               <div class="catgs">
                 <div class="catbutton cat_recipe">Recipes</div>
@@ -108,7 +105,7 @@
                 <div class="catbutton cat_writing">Writing</div>
               </div>
             </article>
-            <article class="blog_main artcl">
+            <!-- UNDER CONSTRUCTION <article class="blog_main artcl">
               <h5>The Ramen Experiment</h5>
               <p>
                 Like many others stuck in their homes in early covid-times, I
@@ -117,14 +114,15 @@
                 months earlier, and New England spring is all over the
                 temperture spectrum. So, I studied the ramen recipes at Serious
                 Eats, and went for it. I've made a collection of my notes on
-                what worked for us here... <a href="">Read More</a>.
+                what worked for us here... <a href="{{ url_for ('ramen_writeup') }}">Read More</a>.
               </p>
               <div class="catgs">
                 <div class="catbutton cat_recipe">Recipes</div>
                 <div class="catbutton cat_writing">Writing</div>
                 <div class="catbutton cat_photography">Photography</div>
               </div>
-            </article>
+            </article>-->
+
           </section>
 
           <aside class="sidebar">
